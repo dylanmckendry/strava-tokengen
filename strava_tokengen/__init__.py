@@ -14,7 +14,7 @@ from stravalib import Client
 __all__ = ["ConfigError", "run_server"]
 
 
-CONFIG_DIR = os.environ.get('XDG_CONFIG_HOME', os.path.join(os.environ['HOME'], '.config'))
+CONFIG_DIR = os.environ.get('XDG_CONFIG_HOME', os.path.join(os.path.expanduser('~'), '.config'))
 CONFIG_FILE = os.path.join(CONFIG_DIR, 'strava-tokengen.conf')
 
 ALL_SCOPES = ['read', 'read_all', 'profile:read_all', 'profile:write',
