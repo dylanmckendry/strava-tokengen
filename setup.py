@@ -17,6 +17,6 @@ setup(name="strava-tokengen",
       ],
       packages=["strava_tokengen"],
       package_data={"strava_tokengen": ["strava-tokengen.conf", "templates/*", "static/*"]},
-      install_requires=["setuptools", "CherryPy>=18.6.0,<19.0.0", "Jinja2>=2.10.0,<3.0.0", "stravalib>=0.10.2,<1.0.0"],
+      install_requires=["setuptools", "CherryPy>=18.6.0,<19.0.0", "Jinja2>=2.10.0,<3.0.0", "stravalib>=0.10.2,<1.0.0", "MarkupSafe<2.1.0"],
       entry_points={'console_scripts': ["strava-tokengen=strava_tokengen:run_server"]}
 )
